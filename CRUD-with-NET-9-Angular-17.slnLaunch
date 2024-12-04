@@ -1,0 +1,17 @@
+[
+  {
+    "Name": "NET-9",
+    "Projects": [
+      {
+        "Path": "CRUD-with-NET-9-Angular-17.Server\\CRUD-with-NET-9-Angular-17.Server.csproj",
+        "Action": "Start",
+        "DebugTarget": "https"
+      },
+      {
+        "Path": "crud-with-net-9-angular-17.client\\crud-with-net-9-angular-17.client.esproj",
+        "Action": "Start",
+        "DebugTarget": "localhost (Chrome)"
+      }
+    ]
+  }
+]

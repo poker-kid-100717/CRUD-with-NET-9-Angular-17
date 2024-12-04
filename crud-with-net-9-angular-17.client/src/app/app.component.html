@@ -1,0 +1,28 @@
+<h1 id="tableLabel">Current Case Load</h1>
+
+<p>This component demonstrates fetching data from the server.</p>
+
+<p *ngIf="!cases"><em>Loading... Please refresh once the ASP.NET backend has started. See <a href="https://aka.ms/jspsintegrationangular">https://aka.ms/jspsintegrationangular</a> for more details.</em></p>
+
+<table *ngIf="cases">
+    <thead>
+        <tr>
+            <th>Case Number</th>
+            <th>Defendent</th>
+            <th>Plaintiff</th>
+            <th>Arresting Officer</th>
+            <th>Badge Number</th>
+            <th>Descrption of Incident</th>
+        </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let case of cases">
+        <td>{{ case.CaseNumber }}</td>
+        <td>{{ case.Defendent }}</td>
+        <td>{{ case.Plaintiff }}</td>
+        <td>{{ case.Officer }}</td>
+        <td>{{ case.BadgeNumber }}</td>
+        <td>{{ case.DescriptionOfInicident }}</td>
+      </tr>
+    </tbody>
+</table>
